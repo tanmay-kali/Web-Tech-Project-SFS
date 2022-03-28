@@ -9,8 +9,12 @@
 //   role: String,
 //   status: String,
 // });
+// $('#myModal').on('shown.bs.modal', function () {
+//   $('#myInput').trigger('focus')
+// })
 
 import axios from 'axios';
+
 
 export default {
   data() {
@@ -81,15 +85,49 @@ async updateRow(id){
 </script>
 
 <template>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="">Recipient:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Message:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Update</button>
+      </div>
+    </div>
+  </div>
+  </div>
   <tr v-for="user in users" :key="user.id">
     <th scope="col">{{user.id}}</th>
     <th scope="col">{{ user.name }}</th>
     <th scope="col">{{ user.email }}</th>
     <th scope="col">{{ user.role }}</th>
-    <th scope="col">{{ user.inactive? "Inactive" : "Active" }}</th>
+    <th scope="col" :class="user.inactive?'in':'ac'"><span>
+      </span>{{ user.inactive? "Inactive" : "Active" }}</th>
     <th scope="col"> <button @click="updateRow(user.id)" >Edit</button> <button @click="deleteRow(user.id)"
    >{{user.inactive? "Undo" : "Delete"}} </button> </th>
+   <th><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Edit</button></th>
   </tr>
+
+
 </template>
 
 <style scoped>
@@ -101,7 +139,12 @@ a {
     cursor: not-allowed;
     pointer-events: none;
 }
-
+.in{
+  color: red;
+}
+.ac{
+  color: green;
+}
 .card-body {
   background-color: rgb(94, 217, 255);
 }

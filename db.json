@@ -2,9 +2,9 @@
   "users": [
     {
       "id": 0,
-      "name": "Enrico Leffler",
-      "email": "Karianne_Greenholt11@yahoo.com",
-      "role": "Admin",
+      "name": null,
+      "email": null,
+      "role": null,
       "inactive": true
     },
     {
@@ -95,6 +95,13 @@
       "role": "Admin",
       "inactive": false,
       "id": 13
+    },
+    {
+      "name": "Bao",
+      "email": "t@gmail.com",
+      "role": "Director",
+      "inactive": true,
+      "id": 14
     }
   ]
 }
