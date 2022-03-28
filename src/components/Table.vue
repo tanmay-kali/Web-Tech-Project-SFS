@@ -1,29 +1,11 @@
-<script>
+<script setup>
 import { ref } from 'vue';
 import Rows from './Rows.vue';
-export default {
-  data(){
-    return{
-      userList: []
-    }
-  },
-  created(){
-    this.getUserList();
-  },
-  methods: {
-    getUserList: async function() {
-      const { data: res } = await axios.get('http://localhost:3004/users')
-      console.log(res)
-      this.userList = res
-    }
-  }
-}
 </script>
 
 <template>
   <body>
     <div class="container">
-      <HeadBar></HeadBar>
       <div class="card">
         <div class="card-body">
           <h5 class="card-title">User Management</h5>
@@ -42,13 +24,7 @@ export default {
           </tr>
         </thead>
         <tbody id="userTableBody">
-          <Rows
-            id="1"
-            name="tanmay"
-            email="xyz@gmail.com"
-            role="director"
-            status="Active"
-          ></Rows>
+          <Rows></Rows>
         </tbody>
       </table>
     </div>

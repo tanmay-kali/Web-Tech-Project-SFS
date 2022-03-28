@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
+    "database": "json-server --watch db.json --port 3004",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
@@ -10,7 +11,8 @@
   "dependencies": {
     "axios": "^0.26.1",
     "json-server": "^0.17.0",
-    "vue": "^3.2.25"
+    "vue": "^3.2.25",
+    "vue-axios": "^3.4.1"
   },
   "devDependencies": {
     "@faker-js/faker": "^6.0.0",
