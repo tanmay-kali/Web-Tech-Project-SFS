@@ -16,7 +16,7 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #0573e0;
   margin-top: 60px;
 }
 </style>

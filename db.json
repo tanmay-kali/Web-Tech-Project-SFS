@@ -2,9 +2,9 @@
   "users": [
     {
       "id": 0,
-      "name": null,
-      "email": null,
-      "role": null,
+      "name": "ok",
+      "email": "ok",
+      "role": "ok",
       "inactive": true
     },
     {
@@ -102,6 +102,27 @@
       "role": "Director",
       "inactive": true,
       "id": 14
+    },
+    {
+      "name": "jerry ",
+      "email": "t@gmail.com",
+      "role": "Admin",
+      "inactive": false,
+      "id": 15
+    },
+    {
+      "name": null,
+      "email": null,
+      "role": null,
+      "inactive": false,
+      "id": 16
+    },
+    {
+      "name": null,
+      "email": null,
+      "role": null,
+      "inactive": false,
+      "id": 17
     }
   ]
 }

@@ -55,10 +55,14 @@ const addUser=()=>{
 
 <style scoped>
 a {
-  color: #42b983;
+  color: purple
+}
+
+.card-title{
+  color: white;
 }
 
 .card-body {
-  background-color: rgb(94, 217, 255);
+  background-color:purple;
 }
 </style>
