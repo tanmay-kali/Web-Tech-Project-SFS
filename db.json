@@ -2,10 +2,10 @@
   "users": [
     {
       "id": 0,
-      "name": "ok",
-      "email": "ok",
-      "role": "ok",
-      "inactive": true
+      "name": null,
+      "email": null,
+      "role": "null",
+      "inactive": false
     },
     {
       "id": 1,
@@ -123,6 +123,48 @@
       "role": null,
       "inactive": false,
       "id": 17
+    },
+    {
+      "name": "asbhus",
+      "email": "fbdsg",
+      "role": "jhdf jhd ",
+      "inactive": true,
+      "id": 18
+    },
+    {
+      "name": null,
+      "email": null,
+      "role": null,
+      "inactive": false,
+      "id": 19
+    },
+    {
+      "name": null,
+      "email": null,
+      "role": null,
+      "inactive": false,
+      "id": 20
+    },
+    {
+      "name": "samuel",
+      "email": "k",
+      "role": "k",
+      "inactive": false,
+      "id": 21
+    },
+    {
+      "name": "Katy",
+      "email": "katy@gmail.com",
+      "role": "k",
+      "inactive": false,
+      "id": 22
+    },
+    {
+      "name": "jerrywu",
+      "email": "jerrywu@gmail.com",
+      "role": "SuperFrog Student",
+      "inactive": false,
+      "id": 23
     }
   ]
 }
